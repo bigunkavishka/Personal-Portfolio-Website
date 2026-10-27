@@ -3,18 +3,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bigun Kavishka | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Bigun Kavishka | Software Developer Portfolio</title>
+  <meta name="description" content="Explore Bigun Kavishka's software development projects, technical skills, and portfolio.">
+  <meta name="theme-color" content="#0b1120">
+  <meta name="robots" content="index, follow">
+
+  <!-- Replace with your real website URL when published -->
+  <link rel="canonical" href="https://example.com/">
+
+  <meta property="og:title" content="Bigun Kavishka | Portfolio">
+  <meta property="og:description" content="Discover my projects, skills and software development journey.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/profile.jpg">
+
+  <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
-<body>
 
-  <header>
-    <nav class="navbar">
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header">
+    <nav class="navbar container" aria-label="Main navigation">
       <a href="#home" class="logo">Bigun<span>.</span></a>
 
-      <div class="links">
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-links">
+        ☰
+      </button>
+
+      <div class="links" id="nav-links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -24,87 +49,148 @@
     </nav>
   </header>
 
-  <main>
-    <!-- Home -->
+  <main id="main">
     <section id="home" class="hero">
-      <div class="hero-content">
-
-        <div class="hero-text">
+      <div class="hero-content container">
+        <div class="hero-text reveal">
           <p class="tag">WELCOME TO MY PORTFOLIO</p>
 
           <h1>Hi, I'm <span>Bigun Kavishka</span></h1>
-          <h2>Software Engineer</h2>
+          <h2>I build <span id="typing-text">Web Applications</span><span class="cursor" aria-hidden="true">|</span></h2>
 
           <p>
-            I'm passionate about technology, software development
-            and solving real-world problems through coding.
-            I'm continuously learning and building my skills.
+            I'm passionate about programming, software development
+            and solving real-world problems through technology.
+            I'm continuously learning and building useful projects.
           </p>
 
           <div class="hero-buttons">
-            <a class="btn" href="#projects">View My Projects</a>
+            <a class="btn" href="#projects">Explore Projects</a>
             <a class="btn btn-outline" href="#contact">Contact Me</a>
           </div>
         </div>
 
-        <div class="hero-image">
+        <div class="hero-image reveal">
           <img
-            src="assets/profile.jpg.jpg"
-            alt="Bigun Kavishka - Profile Photo"
-          >
+            src="assets/profile.jpg"
+            alt="Portrait of Bigun Kavishka"
+            width="300"
+            height="350"
+            fetchpriority="high">
         </div>
-
       </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>
-        Hi! I'm Bigun Kavishka. I'm passionate about technology,
-        programming and learning new things. My goal is to become
-        a skilled software engineer and build useful applications.
+    <section id="about" class="section container reveal">
+      <p class="tag">GET TO KNOW ME</p>
+      <h2 class="section-title">About Me</h2>
+
+      <p class="section-description">
+        Hi! I'm Bigun Kavishka, an aspiring software developer
+        interested in web development, programming and technology.
+        I enjoy learning new tools, improving my problem-solving
+        skills and creating practical applications.
+      </p>
+
+      <p class="section-description">
+        My goal is to grow as a software engineer and contribute
+        to meaningful projects. I'm currently developing my skills
+        through practice and personal projects.
       </p>
     </section>
 
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <h2>My Skills</h2>
+    <section id="skills" class="section container">
+      <p class="tag">WHAT I WORK WITH</p>
+      <h2 class="section-title">My Skills</h2>
+
       <div class="skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Problem Solving</span>
+        <span class="skill reveal">HTML5</span>
+        <span class="skill reveal">CSS3</span>
+        <span class="skill reveal">JavaScript</span>
+        <span class="skill reveal">Responsive Design</span>
+        <span class="skill reveal">Git & GitHub</span>
+        <span class="skill reveal">Problem Solving</span>
       </div>
+      <p class="hint">Keep only the technologies you can confidently discuss.</p>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <h2>My Projects</h2>
+    <section id="projects" class="section container">
+      <p class="tag">MY RECENT WORK</p>
+      <h2 class="section-title">Featured Projects</h2>
 
-      <div class="project">
-        <h3>Personal Portfolio Website</h3>
-        <p>
-          A personal portfolio website built with HTML, CSS
-          and JavaScript to showcase my skills and projects.
-        </p>
-        <a class="btn" href="#contact">Let's Connect</a>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-preview preview-one" aria-hidden="true">01</div>
+          <div class="project-body">
+            <h3>Personal Portfolio</h3>
+            <p>A responsive website showcasing my profile, skills and work.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <!-- Replace # with your actual project URLs -->
+              <a href="#" class="project-link" data-placeholder>Live Demo ↗</a>
+              <a href="#" class="project-link" data-placeholder>GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-preview preview-two" aria-hidden="true">02</div>
+          <div class="project-body">
+            <h3>To-Do List App</h3>
+            <p>A task manager concept for adding, completing and organizing tasks.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" data-placeholder>Live Demo ↗</a>
+              <a href="#" class="project-link" data-placeholder>GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-preview preview-three" aria-hidden="true">03</div>
+          <div class="project-body">
+            <h3>Calculator App</h3>
+            <p>A calculator interface for practicing JavaScript logic and events.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" data-placeholder>Live Demo ↗</a>
+              <a href="#" class="project-link" data-placeholder>GitHub ↗</a>
+            </div>
+          </div>
+        </article>
       </div>
+
+      <p class="hint">
+        These are starter examples. Replace them with your real projects
+        and working GitHub or live-demo links before publishing.
+      </p>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h2>Contact Me</h2>
-      <p>Let's connect and build something great together.</p>
-      <a class="btn" href="mailto:your-email@example.com">
-        Email Me
-      </a>
+    <section id="contact" class="section container reveal">
+      <p class="tag">LET'S CONNECT</p>
+      <h2 class="section-title">Contact Me</h2>
+      <p class="section-description">
+        Have a project idea or want to connect? Feel free to email me.
+      </p>
+
+      <!-- Replace with your real email address -->
+      <a class="btn" href="mailto:your-email@example.com">Email Me</a>
+      <a class="btn btn-outline" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Bigun Kavishka. All rights reserved.</p>
-  </footer>
+  <button class="back-to-top" type="button" aria-label="Back to top" hidden>
+    ↑
+  </button>
 
+  <footer>
+    <p>&copy; <span id="year">2026</span> Bigun Kavishka. All rights reserved.</p>
+  </footer>
 </body>
 </html>
