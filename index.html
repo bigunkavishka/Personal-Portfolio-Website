@@ -4,22 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Bigun Kavishka | Portfolio</title>
-
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-  <!-- Navigation -->
   <header>
-    <nav>
-      <h2 class="logo">Bigun<span>.</span></h2>
+    <nav class="navbar">
+      <a href="#home" class="logo">Bigun<span>.</span></a>
 
       <div class="links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
@@ -28,145 +25,85 @@
   </header>
 
   <main>
-
     <!-- Home -->
     <section id="home" class="hero">
-      <p class="tag">WELCOME TO MY PORTFOLIO</p>
+      <div class="hero-content">
 
-      <h1>Hi, I'm <span>Bigun Kavishka</span></h1>
+        <div class="hero-text">
+          <p class="tag">WELCOME TO MY PORTFOLIO</p>
 
-      <h2>Software Engineer</h2>
+          <h1>Hi, I'm <span>Bigun Kavishka</span></h1>
+          <h2>Software Engineer</h2>
 
-      <p>
-        I'm passionate about technology, software development
-        and solving real-world problems through coding.
-        I'm continuously learning and building my skills.
-      </p>
+          <p>
+            I'm passionate about technology, software development
+            and solving real-world problems through coding.
+            I'm continuously learning and building my skills.
+          </p>
 
-      <a class="btn" href="#projects">
-        View My Projects
-      </a>
+          <div class="hero-buttons">
+            <a class="btn" href="#projects">View My Projects</a>
+            <a class="btn btn-outline" href="#contact">Contact Me</a>
+          </div>
+        </div>
 
-      <a class="btn" href="#contact">
-        Contact Me
-      </a>
+        <div class="hero-image">
+          <img
+            src="assets/profile.jpg.jpg"
+            alt="Bigun Kavishka - Profile Photo"
+          >
+        </div>
+
+      </div>
     </section>
 
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section">
       <h2>About Me</h2>
-
       <p>
-        I'm Ewadu Acharige Bigun Kavishka, a software
-        engineering enthusiast with an interest in
-        IT, problem-solving and web development.
-
-        I enjoy learning new technologies, improving
-        my programming skills and working with others
-        to create useful digital solutions.
+        Hi! I'm Bigun Kavishka. I'm passionate about technology,
+        programming and learning new things. My goal is to become
+        a skilled software engineer and build useful applications.
       </p>
     </section>
 
-    <!-- Education -->
-    <section id="education">
-      <h2>My Education</h2>
-
-      <div class="project">
-        <h3>G.C.E. Ordinary Level</h3>
-        <p>2014 - 2019 | Passed</p>
-      </div>
-
-      <div class="project">
-        <h3>G.C.E. Advanced Level</h3>
-        <p>2019 - 2023 | Passed</p>
-      </div>
-
-      <div class="project">
-        <h3>E-Soft Metro Campus</h3>
-        <p>2020 - 2022</p>
-        <p>Diploma in English</p>
-        <p>Diploma in IT - Tech</p>
-      </div>
-
-      <div class="project">
-        <h3>IMS Campus</h3>
-        <p>2023 - 2024</p>
-        <p>Certificate of English</p>
-      </div>
-    </section>
-
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class="section">
       <h2>My Skills</h2>
-
       <div class="skills">
         <span>HTML</span>
         <span>CSS</span>
-        <span>Python</span>
-        <span>Java</span>
-        <span>Microsoft Word</span>
-        <span>Microsoft PowerPoint</span>
-        <span>Teamwork</span>
-        <span>Public Relations</span>
-        <span>Leadership</span>
-        <span>Critical Thinking</span>
-        <span>Time Management</span>
+        <span>JavaScript</span>
+        <span>Problem Solving</span>
       </div>
     </section>
 
     <!-- Projects -->
-    <section id="projects">
+    <section id="projects" class="section">
       <h2>My Projects</h2>
 
       <div class="project">
         <h3>Personal Portfolio Website</h3>
         <p>
-          A personal portfolio website created using
-          HTML and CSS to showcase my profile,
-          skills and educational background.
+          A personal portfolio website built with HTML, CSS
+          and JavaScript to showcase my skills and projects.
         </p>
-        <p><strong>Technologies:</strong> HTML, CSS</p>
+        <a class="btn" href="#contact">Let's Connect</a>
       </div>
-
-      <!-- Add more real projects here -->
     </section>
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section">
       <h2>Contact Me</h2>
-
-      <p>
-        Let's connect and build something great.
-      </p>
-
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:bigunkavishka746@gmail.com">
-          bigunkavishka746@gmail.com
-        </a>
-      </p>
-
-      <p>
-        <strong>Phone:</strong>
-        <a href="tel:+94740966317">
-          +94 74 096 6317
-        </a>
-      </p>
-
-      <a class="btn"
-         href="mailto:bigunkavishka746@gmail.com">
+      <p>Let's connect and build something great together.</p>
+      <a class="btn" href="mailto:your-email@example.com">
         Email Me
       </a>
     </section>
-
   </main>
 
-  <!-- Footer -->
   <footer>
-    <p>
-      &copy; 2026 Bigun Kavishka.
-      All rights reserved.
-    </p>
+    <p>&copy; 2026 Bigun Kavishka. All rights reserved.</p>
   </footer>
 
 </body>
